@@ -1,5 +1,5 @@
 <?php
-class DbMySQL extends DB
+class MySql extends DB
 {
 	public function __construct($driver, $host, $db, $user, $pass)
 	{

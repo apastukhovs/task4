@@ -1,5 +1,5 @@
 <?php
-class DbPgSQL extends DB
+class PSql extends DB
 {
 	public function __construct($driver, $host, $db, $user, $pass)
 	{
