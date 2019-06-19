@@ -40,10 +40,10 @@
 	<hr>
 	<h2>PostgreSQL</h2>
 	<hr>
-	<h3>insert into user (id, name, password) values (<?= $id ?>, <?= $name1 ?>, <?= $password1 ?>)</h3>
+	<h3>insert into user (id, name, password) values (<?= $pId ?>, <?= $pName ?>, <?= $pPassword ?>)</h3>
 	<p>Result : <?= $resultPg1 ?></p>
 	<hr>
-	<h3>select id, name, password from user where id = <?= $id ?></h3>
+	<h3>select id, name, password from user where id = <?= $pId ?></h3>
 	<p>Result single line:</p>
 	<?php
 		foreach($rowPg1 as $key => $value){
@@ -51,10 +51,10 @@
 		}
 	?>
 	<hr>
-	<h3>update user set name = <?= $name2 ?> where id = <?= $id ?></h3>
+	<h3>update user set name = <?= $pNameUser ?> where id = <?= $pUserId ?></h3>
 	<p>Result: <?= $resultPg2 ?></p>
 	<hr>
-	<h3>select id, name from user where id = <?= $id ?></h3>
+	<h3>select id, name from user></h3>
 	<p>Result all lines:</p>
 	<?php
 		foreach($rowsPg1 as $item){
